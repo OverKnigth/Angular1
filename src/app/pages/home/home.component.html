@@ -1,0 +1,92 @@
+<div class="container-fluid text-center">
+
+    <div class="container">
+        <h1 style="font-size: 75px; margin: 10px;">Bienvenido a OverGame Store</h1>
+    </div>
+    <br>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" style="width: 100%;" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/videojuegosO2.jpg" class="d-block w-100" alt="videojuegos1" style="width: 100%; height: 700px;">
+          </div>
+          <div class="carousel-item">
+            <img src="image/videojuegosO1.jpg" class="d-block w-100" alt="videojuegos1" style="width: 100%; height: 700px;">
+          </div>
+          <div class="carousel-item">
+            <img src="image/of2.webp" class="d-block w-100" alt="videojuegos1" style="width: 100%; height: 700px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <hr>
+      <h1>Videojuegos Destacados</h1>
+      <hr>
+      <!-- Tarjeta para Videojuegos -->
+      <div class="row">
+        <div class="d-flex flex-nowrap">
+          <div class="card mb-4 shadow-sm row" *ngFor="let videojuego of videojuegos">
+            <img src="image/videojuegos1.png" class="card-img-top" alt="Videojuego 1">
+            <div class="card-body">
+              <h5 class="card-title">{{videojuego.nombre}}</h5>
+              <p class="card-text">{{videojuego.descripcion}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                </div>
+                <small class="text-muted">Precio: ${{videojuego.precio}}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Footer -->
+      <footer class="text-center text-white" style="background-color: grey;">
+        <div class="container p-4">
+          <section class="mb-4">
+            <p>
+              OverGame Store - Tu tienda de videojuegos favorita. ¡Explora, juega y disfruta!
+            </p>
+          </section>
+
+          <section class="">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Información</h5>
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#!" class="text-dark">Términos y condiciones</a></li>
+                  <li><a href="#!" class="text-dark">Política de privacidad</a></li>
+                  <li><a href="#!" class="text-dark">Ayuda</a></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Contacta con nosotros</h5>
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#!" class="text-dark">Telefón: 123-456-7890</a></li>
+                  <li><a href="#!" class="text-dark">Horario de atención: Lunes a Viernes de 9:00 a 18:00</a></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Ubicación</h5>
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#!" class="text-dark">1234 Main St, Anytown, USA</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2024 OverGame Store. Todos los derechos reservados.
+        </div>
+      </footer>
+    </div>
+ 
