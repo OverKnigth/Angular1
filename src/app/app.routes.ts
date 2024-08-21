@@ -7,5 +7,6 @@ export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'videojuegos', component: VideojuegosComponent },
     { path: 'nosotros', component: NosotrosComponent },
+    { path: 'videojuegos/:id', component: VideojuegosComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
